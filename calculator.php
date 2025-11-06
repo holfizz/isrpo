@@ -68,15 +68,15 @@ class Calculator {
     private function subtract() {
         return $this->num1 - $this->num2;
     }
+
     
-    
-    // private function divide() {
-    //     if ($this->num2 == 0) {
-    //         echo "Ошибка: деление на ноль!\n";
-    //         return null;
-    //     }
-    //     return $this->num1 / $this->num2;
-    // }
+    private function divide() {
+        if ($this->num2 == 0) {
+            echo "Ошибка: деление на ноль!\n";
+            return null;
+        }
+        return $this->num1 / $this->num2;
+    }
     
     // private function power() {
     //     return pow($this->num1, $this->num2);
